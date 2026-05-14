@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Marina Chatzimylou</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<header class="site-header page-header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">Marina Chatzimylou</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="inner-hero section-wrap reveal">
+    <p class="eyebrow">Projects</p>
+    <h1>A collection of academic and personal projects.</h1>
+  </section>
+
+  <section class="project-list section-wrap">
+    <article class="project-detail-card reveal">
+      <div class="project-image"><img src="images/MapCover.png" alt="Map Cover"></div>
+      <div class="project-content">
+        <p class="project-type">01 · Web Application</p>
+        <h2>Community Communication System</h2>
+        <p>A Java and Spring Boot web application designed for community communication with role-based user flows, database integration and responsive pages.</p>
+        <div class="tag-row"><span>Java</span><span>Spring Boot</span><span>Thymeleaf</span><span>MariaDB</span><span>Testing</span></div>
+        <div class="project-actions">
+          <button class="btn primary small link-button" data-modal="project-one">View details</button>
+          <!-- <a class="btn secondary small" href="#">Code link</a> -->
+        </div>
+      </div>
+    </article>
+
+    <article class="project-detail-card reverse reveal">
+      <div class="project-image"><img src="images/DevopsCover.png" alt="DevOps Cover"></div>
+      <div class="project-content">
+        <p class="project-type">02 · Deployment Pipeline</p>
+        <h2>DevOps Pipeline</h2>
+        <p>A deployment pipeline built using Jenkins, GitLab, Docker, Terraform and Nginx. The project included automated builds, deployment workflows, reverse proxy setup and SSL configuration.</p>
+        <div class="tag-row"><span>Jenkins</span><span>Docker</span><span>GitLab</span><span>Terraform</span><span>Nginx</span></div>
+        <div class="project-actions">
+          <button class="btn primary small link-button" data-modal="project-two">View details</button>
+          <!-- <a class="btn secondary small" href="#">Code link</a> -->
+        </div>
+      </div>
+    </article>
+
+    <article class="project-detail-card reveal">
+      <div class="project-image"><img src="images/PrototypeCover.png" alt="Prototype Cover"></div>
+      <div class="project-content">
+        <p class="project-type">03 · UX Prototype</p>
+        <h2>SignQuest Prototype</h2>
+        <p>A Figma prototype for a children’s learning game focused on British Sign Language, lip reading, accessibility and engagement.</p>
+        <div class="tag-row"><span>Figma</span><span>UX Research</span><span>Accessibility</span><span>Prototyping</span></div>
+        <div class="project-actions">
+          <button class="btn primary small link-button" data-modal="project-three">View details</button>
+          <a class="btn secondary small" href="https://www.figma.com/proto/iis8BTEKJLkgLVAltpRdml/UX-Assignment?node-id=192-183&t=hQbRRePX7jz2RYB8-1" target="_blank" rel="noopener noreferrer">Prototype link</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-detail-card reverse reveal">
+      <div class="project-image"><img src="images/fekkomcover.png" alt="FEKKOM Cover"></div>
+      <div class="project-content">
+        <p class="project-type">04 · Front-End Website</p>
+        <h2>FEKKOM Website</h2>
+        <p>A responsive website developed and deployed using GitHub Pages with a focus on clean layout, navigation and modern styling.</p>
+        <div class="tag-row">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span>
+        </div>
+        <div class="project-actions">
+          <button class="btn primary small link-button" data-modal="project-four">View details</button>
+          <a class="btn secondary small" href="https://fekkom.github.io/" target="_blank">Live Site</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-detail-card reveal">
+      <div class="project-image"><img src="images/PortfolioCover.png" alt="Portfolio Cover"></div>
+      <div class="project-content">
+        <p class="project-type">05 · Personal Portfolio</p>
+        <h2>Portfolio Website</h2>
+        <p>A responsive portfolio website designed and developed to showcase software engineering, UX and web development projects.</p>
+        <div class="tag-row">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span>
+        </div>
+        <div class="project-actions">
+          <button class="btn primary small link-button" data-modal="project-five">View details</button>
+          <!-- <a class="btn secondary small" href="index.html" target="_blank" rel="noopener noreferrer">Live Site</a> -->
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+  <div class="project-modal" id="project-one" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="project-one-title">
+      <button class="modal-close" data-close-modal aria-label="Close project details">×</button>
+      <p class="modal-meta">01 · Web Application</p>
+      <h2 id="project-one-title">Community Communication System</h2>
+      <p>A web application designed for a real client as part of a university web development module. The client wanted a platform that could be used by local towns to promote small businesses through an interactive map-based interface.</p>
+      <p>The application included main, secondary and tertiary street navigation, allowing users to explore different areas of the town and view local organisations. Businesses could use the platform to present their details and promote themselves through content such as descriptions, links and promotions.</p>
+      <p>My main contribution focused on the visual design of the interactive map, the location box used within the map interface, and the view/edit organisation details functionality for both organiser and admin users.</p>
+      <div class="modal-grid">
+        <div class="modal-section">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Interactive map with main, secondary and tertiary street navigation.</li>
+            <li>Organisation pages for local businesses and community groups.</li>
+            <li>Promotion areas where businesses could present offers and updates.</li>
+            <li>Role-based access for organisers and administrators.</li>
+            <li>View and edit organisation details functionality.</li>
+            <li>Location box to help users understand where they are within the map.</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+        <h3>Technologies Used</h3>
+          <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Thymeleaf</li>
+            <li>MariaDB</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>JUnit</li>
+          </ul>
+        </div>
+      </div>
+      <div class="image-placeholders">
+        <div class="image-placeholder">      
+          <img src="images/MainStreet.png" alt="Main street map">
+        </div>
+        <div class="image-placeholder">          
+          <img src="images/OrgList.png" alt="Organisation list">
+        </div>
+        <div class="image-placeholder">          
+          <img src="images/EditPage.png" alt="Edit organisation page">
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="project-modal" id="project-two" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="project-two-title">
+      <button class="modal-close" data-close-modal aria-label="Close project details">×</button>
+      <p class="modal-meta">02 · DevOps</p>
+      <h2 id="project-two-title">DevOps Pipeline</h2>
+      <p>A CI/CD deployment pipeline developed as part of a university DevOps module to automate the build, testing and deployment workflow of the “Edit Organisation Details” functionality within a Spring Boot web application.</p>
+      <p>The pipeline focused on ensuring that organiser and admin users could reliably update organisation information through a fully automated workflow that included testing, artifact generation, containerisation and deployment.</p>
+      <div class="modal-grid">
+        <div class="modal-section">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Automated build and deployment workflow using Jenkins.</li>
+            <li>Testing of the Edit Organisation Details functionality.</li>
+            <li>Containerised application deployment using Docker.</li>
+            <li>Infrastructure provisioning with Terraform on Azure DevTest Labs.</li>
+            <li>Artifact storage and retrieval through GitLab Packages.</li>
+            <li>Nginx reverse proxy and SSL configuration.</li>
+            <li>Selenium and JMeter testing integration.</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies Used</h3>
+          <ul>
+            <li>Jenkins</li>
+            <li>Docker</li>
+            <li>Terraform</li>
+            <li>GitLab</li>
+            <li>Nginx</li>
+            <li>Azure</li>
+            <li>Selenium</li>
+            <li>JMeter</li>
+          </ul>
+        </div>
+      </div>
+      <div class="image-placeholders">
+        <div class="image-placeholder">      
+          <img src="images/Jenkins.png" alt="Jenkins">
+        </div>
+        <div class="image-placeholder">          
+          <img src="images/Build.png" alt="Build code">
+        </div>
+        <div class="image-placeholder">          
+          <img src="images/Jmeter.png" alt="JMeter">
+        </div>
+        <div class="image-placeholder">          
+          <img src="images/HTTPS.png" alt="http configuration result">
+        </div>
+      </div>  
+      </div>    
+  </div>
+
+  <div class="project-modal" id="project-three" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="project-three-title">
+      <button class="modal-close" data-close-modal aria-label="Close project details">×</button>
+      <p class="modal-meta">03 · UX Prototype</p>
+      <h2 id="project-three-title">SignQuest Prototype</h2>
+      <p>A university UX design project focused on creating an accessible learning experience for children with hearing disabilities through gamified British Sign Language and lip-reading activities.</p>
+      <p>The prototype was designed in Figma and aimed to make learning more engaging through storyline progression, rewards, interactive tasks and child-friendly visual design. Accessibility and usability were central to the project, with particular focus on visual communication, simplicity and cognitive load reduction.</p>      <div class="modal-grid">
+        <div class="modal-section">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Interactive BSL and lip-reading learning tasks.</li>
+            <li>Storyline progression system with rewards and unlockable stages.</li>
+            <li>Child-friendly visual interface and navigation.</li>
+            <li>Accessibility-focused design for hearing-impaired children.</li>
+            <li>Gamification elements including diamonds, stages and progression.</li>
+            <li>Prototype designed and tested in Figma.</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3>Research & Evaluation</h3>
+          <p>The project included user research, heuristic evaluation, WCAG accessibility considerations, questionnaires and think-aloud usability testing to evaluate engagement, usability and accessibility.</p>
+        </div>
+      </div>
+      <div class="image-placeholders">
+        <div class="image-placeholder">      
+          <img src="images/Tutorial.png" alt="Tutorial prototype screen">
+        </div>
+        <div class="image-placeholder">      
+          <img src="images/Homepage.png" alt="Homepage prototype screen">
+        </div>
+        <div class="image-placeholder">          
+          <img src="images/Map.png" alt="Map prototype screen">
+        </div>
+        <div class="image-placeholder">          
+          <img src="images/Task.png" alt="Learning task prototype screen">
+        </div>
+        <div class="image-placeholder">          
+          <img src="images/Storyline.png" alt="Storyline prototype screen">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-modal" id="project-four" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="project-four-title">
+      <button class="modal-close" data-close-modal aria-label="Close project details">×</button>
+      <p class="modal-meta">04 · Front-End Website</p>
+      <h2 id="project-four-title">FEKKOM Website</h2>
+      <p>A responsive front-end website developed and deployed using GitHub Pages as part of the a team project in a Software Engineering module. The project focused on creating a clean, structured and accessible web presence with clear navigation and modern styling.</p>
+      <p>The website was built using HTML, CSS and JavaScript, with attention to layout consistency, responsive behaviour and simple user interaction across different screen sizes.</p>  
+      <p>Note: The page is now maintained by the client.</p>    
+      <div class="modal-grid">
+        <div class="modal-section">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Responsive multi-section website layout.</li>
+            <li>Clear navigation and structured page content.</li>
+            <li>Custom styling using HTML and CSS.</li>
+            <li>Basic JavaScript interaction.</li>
+            <li>Public deployment through GitHub Pages.</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies Used</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>GitHub Pages</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+      </div>
+      <div class="image-placeholders">
+        <div class="image-placeholder">      
+          <img src="images/fekkomhomepage.png" alt="FEKKOM Homepage">
+        </div>
+        <div class="image-placeholder">          
+          <img src="images/ourcity.png" alt="City page">
+        </div>
+        <div class="image-placeholder">          
+          <img src="images/info.png" alt="Information page">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-modal" id="project-five" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="project-five-title">
+    <button class="modal-close" data-close-modal aria-label="Close project details">×</button>
+    <p class="modal-meta">05 · Personal Portfolio</p>
+    <h2 id="project-five-title">Portfolio Website</h2>
+    <p>A personal portfolio website designed and developed to showcase academic and personal projects in software engineering, DevOps, UX and web development.</p>
+    <p>The website was built using HTML, CSS and JavaScript with a focus on responsive design, modern UI styling and interactive project presentation through expandable project modals and image previews.</p>
+    <div class="modal-grid">
+
+      <div class="modal-section">
+        <h3>Key Features</h3>
+        <ul>
+          <li>Responsive multi-page portfolio website.</li>
+          <li>Interactive project modals with expandable content.</li>
+          <li>Image lightbox functionality for project screenshots.</li>
+          <li>Modern UI styling and responsive layouts.</li>
+          <li>Project showcase for development, DevOps and UX work.</li>
+          <li>Deployment using GitHub Pages.</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h3>Technologies Used</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Responsive Design</li>
+          <li>GitHub</li>
+          <li>GitHub Pages</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</main>
+<footer><p>© 2026 Marina Chatzimylou. All rights reserved.</p></footer>
+
+<div class="lightbox" id="lightbox">
+  <img src="" alt="Expanded image">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
