@@ -31,19 +31,19 @@
   </section>
 
   <section class="project-list section-wrap">
-<!--    <article class="project-detail-card reverse reveal">-->
-<!--      <div class="project-image"><img src="images/MapCover.png" alt="Map Cover"></div>-->
-<!--      <div class="project-content">-->
-<!--        <p class="project-type">01 · Web Application</p>-->
-<!--        <h2>Cost-of-Living Calculator</h2>-->
-<!--        <p>A Java and Spring Boot web application designed for community communication with role-based user flows, database integration and responsive pages.</p>-->
-<!--        <div class="tag-row"><span>Java</span><span>Spring Boot</span><span>Thymeleaf</span><span>MariaDB</span><span>Testing</span></div>-->
-<!--        <div class="project-actions">-->
-<!--          <button class="btn primary small link-button" data-modal="project-one">View details</button>-->
-<!--          &lt;!&ndash; <a class="btn secondary small" href="#">Code link</a> &ndash;&gt;-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </article>-->
+      <article class="project-detail-card reverse reveal">
+          <div class="project-image"><img src="images/CalculatorCover.png" alt="Cost-of-Living Calculator Map"></div>
+          <div class="project-content">
+              <p class="project-type">01 · Web Application</p>
+              <h2>Cost-of-Living Calculator</h2>
+              <p>A web application developed for Darogan to help users compare living costs across locations in Wales and other UK cities using real-world housing, transport, grocery and lifestyle data.</p>
+              <div class="tag-row"><span>React</span><span>Java</span><span>Spring Boot</span><span>MariaDB</span><span>Python</span><span>Data Visualisation</span></div>
+              <div class="project-actions">
+                  <button class="btn primary small link-button" data-modal="project-one">View details</button>
+                  <span class="btn secondary small" style="cursor: default; pointer-events: none;">Code available after final grade release</span>
+              </div>
+          </div>
+      </article>
 
     <article class="project-detail-card reveal">
       <div class="project-image"><img src="images/MapCover.png" alt="Map Cover"></div>
@@ -53,8 +53,8 @@
         <p>A Java and Spring Boot web application designed for community communication with role-based user flows, database integration and responsive pages.</p>
         <div class="tag-row"><span>Java</span><span>Spring Boot</span><span>Thymeleaf</span><span>MariaDB</span><span>Testing</span></div>
         <div class="project-actions">
-          <button class="btn primary small link-button" data-modal="project-one">View details</button>
-          <!-- <a class="btn secondary small" href="#">Code link</a> -->
+          <button class="btn primary small link-button" data-modal="project-two">View details</button>
+           <a class="btn secondary small" style="cursor: default; pointer-events: none;">Code Will Be Available Soon</a>
         </div>
       </div>
     </article>
@@ -67,8 +67,8 @@
         <p>A deployment pipeline built using Jenkins, GitLab, Docker, Terraform and Nginx. The project included automated builds, deployment workflows, reverse proxy setup and SSL configuration.</p>
         <div class="tag-row"><span>Jenkins</span><span>Docker</span><span>GitLab</span><span>Terraform</span><span>Nginx</span></div>
         <div class="project-actions">
-          <button class="btn primary small link-button" data-modal="project-two">View details</button>
-          <!-- <a class="btn secondary small" href="#">Code link</a> -->
+          <button class="btn primary small link-button" data-modal="project-three">View details</button>
+           <a class="btn secondary small" style="cursor: default; pointer-events: none;">Code Will Be Available Soon</a>
         </div>
       </div>
     </article>
@@ -81,7 +81,7 @@
         <p>A Figma prototype for a children’s learning game focused on British Sign Language, lip reading, accessibility and engagement.</p>
         <div class="tag-row"><span>Figma</span><span>UX Research</span><span>Accessibility</span><span>Prototyping</span></div>
         <div class="project-actions">
-          <button class="btn primary small link-button" data-modal="project-three">View details</button>
+          <button class="btn primary small link-button" data-modal="project-four">View details</button>
           <a class="btn secondary small" href="https://www.figma.com/proto/iis8BTEKJLkgLVAltpRdml/UX-Assignment?node-id=192-183&t=hQbRRePX7jz2RYB8-1" target="_blank" rel="noopener noreferrer">Prototype link</a>
         </div>
       </div>
@@ -97,7 +97,7 @@
           <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span>
         </div>
         <div class="project-actions">
-          <button class="btn primary small link-button" data-modal="project-four">View details</button>
+          <button class="btn primary small link-button" data-modal="project-five">View details</button>
           <a class="btn secondary small" href="https://fekkom.github.io/" target="_blank">Live Site</a>
           <a class="btn secondary small" href="https://github.com/MarHa25/FEKKOM-project" target="_blank" rel="noopener noreferrer">GitHub Repository Link</a>          
         </div>
@@ -114,7 +114,7 @@
           <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span>
         </div>
         <div class="project-actions">
-          <button class="btn primary small link-button" data-modal="project-five">View details</button>
+          <button class="btn primary small link-button" data-modal="project-six">View details</button>
           <a class="btn secondary small" href="https://github.com/MarHa25/Personal-Portfolio" target="_blank" rel="noopener noreferrer">GitHub Repository Link</a>
           <!-- <a class="btn secondary small" href="index.html" target="_blank" rel="noopener noreferrer">Live Site</a> -->
         </div>
@@ -122,13 +122,74 @@
     </article>
   </section>
 
+    <div class="project-modal" id="project-one" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="project-one-title">
+            <button class="modal-close" data-close-modal aria-label="Close project details">×</button>
+            <p class="modal-meta">01 · Web Application</p>
+            <h2 id="project-one-title">Cost-of-Living Calculator</h2>
+            <p>A web application developed for <a href="https://darogan.wales/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Darogan</a> as part of my MSc Software Engineering dissertation. The project helps users compare estimated living costs across locations in Wales and other UK cities.</p>
+            <p>The calculator allows users to select a location and salary and view estimated costs across areas including housing, utilities, transport and groceries. The results are presented in a way to help users compare their estimated disposable income between the chosen locations.</p>
+            <p>My main contributions were creating the initial interactive prototype and establishing the frontend foundation for the application. The prototype helped define the calculator's structure and user flow and was used for team and client review. I also designed and developed the interactive map, including the map interface and location pins. As the project progressed, I worked on making the application responsive across different screen sizes. In addition, I developed the automated data collection process using Python to collect and prepare the data used by the calculator.</p>
+            <div class="modal-grid">
+                <div class="modal-section">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Cost-of-living calculator based on location and salary.</li>
+                        <li>Comparison of estimated living costs across locations.</li>
+                        <li>Interactive map showing available locations.</li>
+                        <li>Breakdown of housing, transport, groceries and lifestyle costs.</li>
+                        <li>Disposable income comparison.</li>
+                        <li>Data visualisations for cost comparisons.</li>
+                        <li>Automated data collection and data updates.</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>CSS</li>
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>MariaDB</li>
+                        <li>Python</li>
+                        <li>Vite</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-placeholders">
+                <div class="image-placeholder">
+                    <img src="images/FullPage.png" alt="Final cost-of-living calculator">
+                </div>
+                <div class="image-placeholder">
+                    <img src="images/ColResults.png" alt="Cost-of-living calculator results">
+                </div>
+                <div class="image-placeholder">
+                    <img src="images/ColMap.png" alt="Cost-of-living calculator map">
+                </div>
+                <div class="image-placeholder">
+                    <img src="images/ColTechnologies.png" alt="Technologies used in the cost-of-living calculator project">
+                </div>
+                <div class="image-placeholder">
+                    <img src="images/DataCollectionPipeline.png" alt="Automated data collection pipeline">
+                </div>
+                <div class="image-placeholder">
+                    <img src="images/PythonJavaIntegration.png" alt="Java and Python data update integration flow">
+                </div>
+                <div class="image-placeholder">
+                    <img src="images/ColPrototype.png" alt="Interactive prototype used for team and client review">
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <div class="project-modal" id="project-one" aria-hidden="true">
+  <div class="project-modal" id="project-two" aria-hidden="true">
     <div class="modal-backdrop" data-close-modal></div>
     <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="project-one-title">
       <button class="modal-close" data-close-modal aria-label="Close project details">×</button>
       <p class="modal-meta">02 · Web Application</p>
-      <h2 id="project-one-title">Community Communication System</h2>
+      <h2 id="project-two-title">Community Communication System</h2>
       <p>A web application designed for a real client as part of a university web development module. The client wanted a platform that could be used by local towns to promote small businesses through an interactive map-based interface.</p>
       <p>The application included main, secondary and tertiary street navigation, allowing users to explore different areas of the town and view local organisations. Businesses could use the platform to present their details and promote themselves through content such as descriptions, links and promotions.</p>
       <p>My main contribution focused on the visual design of the interactive map, the location box used within the map interface, and the view/edit organisation details functionality for both organiser and admin users.</p>
@@ -172,12 +233,12 @@
     </div>
   </div>
 
-  <div class="project-modal" id="project-two" aria-hidden="true">
+  <div class="project-modal" id="project-three" aria-hidden="true">
     <div class="modal-backdrop" data-close-modal></div>
     <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="project-two-title">
       <button class="modal-close" data-close-modal aria-label="Close project details">×</button>
       <p class="modal-meta">03 · DevOps</p>
-      <h2 id="project-two-title">DevOps Pipeline</h2>
+      <h2 id="project-three-title">DevOps Pipeline</h2>
       <p>A CI/CD deployment pipeline developed as part of a university DevOps module to automate the build, testing and deployment workflow of the “Edit Organisation Details” functionality within a Spring Boot web application.</p>
       <p>The pipeline focused on ensuring that organiser and admin users could reliably update organisation information through a fully automated workflow that included testing, artifact generation, containerisation and deployment.</p>
       <div class="modal-grid">
@@ -224,12 +285,12 @@
       </div>    
   </div>
 
-  <div class="project-modal" id="project-three" aria-hidden="true">
+  <div class="project-modal" id="project-four" aria-hidden="true">
     <div class="modal-backdrop" data-close-modal></div>
     <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="project-three-title">
       <button class="modal-close" data-close-modal aria-label="Close project details">×</button>
       <p class="modal-meta">04 · UX Prototype</p>
-      <h2 id="project-three-title">SignQuest Prototype</h2>
+      <h2 id="project-four-title">SignQuest Prototype</h2>
       <p>A university UX design project focused on creating an accessible learning experience for children with hearing disabilities through gamified British Sign Language and lip-reading activities.</p>
       <p>The prototype was designed in Figma and aimed to make learning more engaging through storyline progression, rewards, interactive tasks and child-friendly visual design. Accessibility and usability were central to the project, with particular focus on visual communication, simplicity and cognitive load reduction.</p>      <div class="modal-grid">
         <div class="modal-section">
@@ -268,12 +329,12 @@
     </div>
   </div>
 
-  <div class="project-modal" id="project-four" aria-hidden="true">
+  <div class="project-modal" id="project-five" aria-hidden="true">
     <div class="modal-backdrop" data-close-modal></div>
     <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="project-four-title">
       <button class="modal-close" data-close-modal aria-label="Close project details">×</button>
       <p class="modal-meta">05 · Front-End Website</p>
-      <h2 id="project-four-title">FEKKOM Website</h2>
+      <h2 id="project-five-title">FEKKOM Website</h2>
       <p>A responsive front-end website developed and deployed using GitHub Pages as part of the a team project in a Software Engineering module. The project focused on creating a clean, structured and accessible web presence with clear navigation and modern styling.</p>
       <p>The website was built using HTML, CSS and JavaScript, with attention to layout consistency, responsive behaviour and simple user interaction across different screen sizes.</p>  
       <p>Note: The page is now maintained by the client.</p>    
@@ -313,13 +374,13 @@
     </div>
   </div>
 
-  <div class="project-modal" id="project-five" aria-hidden="true">
+  <div class="project-modal" id="project-six" aria-hidden="true">
   <div class="modal-backdrop" data-close-modal></div>
 
   <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="project-five-title">
     <button class="modal-close" data-close-modal aria-label="Close project details">×</button>
     <p class="modal-meta">06 · Personal Portfolio</p>
-    <h2 id="project-five-title">Portfolio Website</h2>
+    <h2 id="project-six-title">Portfolio Website</h2>
     <p>A personal portfolio website designed and developed to showcase academic and personal projects in software engineering, DevOps, UX and web development.</p>
     <p>The website was built using HTML, CSS and JavaScript with a focus on responsive design, modern UI styling and interactive project presentation through expandable project modals and image previews.</p>
     <div class="modal-grid">
